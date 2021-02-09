@@ -8,8 +8,46 @@ renv, packrat
 
 ## Python
 
-Conda is useful package manager and can create virtual environments for pretty much anay programming language ^[https://docs.conda.io/en/latest/].
+Conda is useful package manager and can create virtual environments for pretty much anay programming language ^[https://docs.conda.io/en/latest/]. 
 
+### Create a virtual environment
+* [install conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/)
+* check conda version using: ```conda --version```
+
+#### with default python version
+
+```{bash eval=FALSE}
+conda create --name env1
+conda activate env1
+python --version
+```
+
+#### a specifc python version
+
+```{bash eval=FALSE}
+conda create --name env2 python=3.7
+conda activate env2
+python --version
+```
+
+### install packages
+
+```{bash eval=FALSE}
+conda install numpy
+```
+
+### exit virtual environment
+
+```{bash eval=FALSE}
+conda deactivate
+```
+
+## Delete virtual environment
+
+```{bash eval=FALSE}
+conda env remove -n env1
+conda env remove -n env2
+```
 
 
 Similar to how shipping containers carry material goods in an enclosed space, software containers consist of application related goods (*e.g.* files and dependencies) in an enclosed environment. Containerization ensure reproducibility by bundling the necessary resources required to run a given set of analyses, web application, pipelines *etc.* irrespective of the operation system (OS). Thus, containers can be run on any OS (*e.g.* Mac, Windows, Linux)^[ https://stackoverflow.com/questions/50974960/whats-the-difference-between-docker-and-python-virtualenv].

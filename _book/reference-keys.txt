@@ -10,3 +10,9 @@ example-two
 final-words
 r
 python
+create-a-virtual-environment
+with-default-python-version
+a-specifc-python-version
+install-packages
+exit-virtual-environment
+delete-virtual-environment
