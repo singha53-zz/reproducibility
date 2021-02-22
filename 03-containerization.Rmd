@@ -53,6 +53,10 @@ conda env remove -n env2
 Similar to how shipping containers carry material goods in an enclosed space, software containers consist of application related goods (*e.g.* files and dependencies) in an enclosed environment. Containerization ensure reproducibility by bundling the necessary resources required to run a given set of analyses, web application, pipelines *etc.* irrespective of the operation system (OS). Thus, containers can be run on any OS (*e.g.* Mac, Windows, Linux)^[ https://stackoverflow.com/questions/50974960/whats-the-difference-between-docker-and-python-virtualenv].
 
 
-Glossary:
+Docker references
+1. [Understanding Docker Build Args, Environment Variables and Docker Compose Variables](https://vsupalov.com/docker-env-vars/)
+3. [env file](https://vsupalov.com/docker-arg-env-variable-guide/)
 
+
+e.g. [dockerized pipeline](https://github.com/cmap/dockerized_mts)
 
