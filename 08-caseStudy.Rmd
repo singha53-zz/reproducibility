@@ -1,4 +1,4 @@
-# Version Control {#vc}
+# Case Study {#casestudy}
 
 ## Introduction
 

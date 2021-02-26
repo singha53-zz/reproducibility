@@ -24,7 +24,7 @@
 <meta name="author" content="Amrit Singh" />
 
 
-<meta name="date" content="2021-02-09" />
+<meta name="date" content="2021-02-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -137,10 +137,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
 <li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
-<li class="chapter" data-level="4" data-path="containerization.html"><a href="containerization.html"><i class="fa fa-check"></i><b>4</b> Containerization</a></li>
+<li class="chapter" data-level="4" data-path="containerization.html"><a href="containerization.html"><i class="fa fa-check"></i><b>4</b> Containerization</a><ul>
+<li class="chapter" data-level="4.1" data-path="containerization.html"><a href="containerization.html#r"><i class="fa fa-check"></i><b>4.1</b> R</a></li>
+<li class="chapter" data-level="4.2" data-path="containerization.html"><a href="containerization.html#python"><i class="fa fa-check"></i><b>4.2</b> Python</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
 <li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
 <li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="5.3" data-path="applications.html"><a href="applications.html#r-markdown"><i class="fa fa-check"></i><b>5.3</b> R Markdown</a></li>
+<li class="chapter" data-level="5.4" data-path="applications.html"><a href="applications.html#including-plots"><i class="fa fa-check"></i><b>5.4</b> Including Plots</a></li>
+<li class="chapter" data-level="5.5" data-path="applications.html"><a href="applications.html#r-markdown-1"><i class="fa fa-check"></i><b>5.5</b> R Markdown</a></li>
+<li class="chapter" data-level="5.6" data-path="applications.html"><a href="applications.html#including-plots-1"><i class="fa fa-check"></i><b>5.6</b> Including Plots</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -172,6 +179,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="example-two" class="section level2">
 <h2><span class="header-section-number">5.2</span> Example two</h2>
+
+</div>
+<div id="r-markdown" class="section level2">
+<h2><span class="header-section-number">5.3</span> R Markdown</h2>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="applications.html#cb4-1"></a><span class="kw">summary</span>(cars)</span></code></pre></div>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+</div>
+<div id="including-plots" class="section level2">
+<h2><span class="header-section-number">5.4</span> Including Plots</h2>
+<p>You can also embed plots, for example:</p>
+<p><img src="computational_reproducibility_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+
+</div>
+<div id="r-markdown-1" class="section level2">
+<h2><span class="header-section-number">5.5</span> R Markdown</h2>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="applications.html#cb6-1"></a><span class="kw">summary</span>(cars)</span></code></pre></div>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+</div>
+<div id="including-plots-1" class="section level2">
+<h2><span class="header-section-number">5.6</span> Including Plots</h2>
+<p>You can also embed plots, for example:</p>
+<p><img src="computational_reproducibility_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 
 </div>
 </div>

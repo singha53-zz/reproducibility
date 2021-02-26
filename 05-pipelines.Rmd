@@ -1,4 +1,4 @@
-# Version Control {#vc}
+# Pipelines {#pipelines}
 
 ## Introduction
 
