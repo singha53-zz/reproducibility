@@ -8,6 +8,7 @@ containerization
 introduction-1
 r
 python
+<<<<<<< HEAD
 advanced-1
 vc
 introduction-2
@@ -24,3 +25,11 @@ advanced-5
 casestudy
 introduction-6
 advanced-6
+=======
+create-a-virtual-environment
+with-default-python-version
+a-specifc-python-version
+install-packages
+exit-virtual-environment
+delete-virtual-environment
+>>>>>>> ce0f603df2c531e36960f48498e00e5ff4283e9b

@@ -143,6 +143,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="cloud.html"><a href="cloud.html#advanced"><i class="fa fa-check"></i><b>3.2</b> Advanced</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="containerization.html"><a href="containerization.html"><i class="fa fa-check"></i><b>4</b> Containerization</a><ul>
+<<<<<<< HEAD
 <li class="chapter" data-level="4.1" data-path="containerization.html"><a href="containerization.html#introduction-1"><i class="fa fa-check"></i><b>4.1</b> Introduction</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="containerization.html"><a href="containerization.html#r"><i class="fa fa-check"></i><b>4.1.1</b> R</a></li>
 <li class="chapter" data-level="4.1.2" data-path="containerization.html"><a href="containerization.html#python"><i class="fa fa-check"></i><b>4.1.2</b> Python</a></li>
@@ -160,6 +161,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7" data-path="cicd.html"><a href="cicd.html"><i class="fa fa-check"></i><b>7</b> Continuous Integration and Continuous Delivery</a><ul>
 <li class="chapter" data-level="7.1" data-path="cicd.html"><a href="cicd.html#introduction-4"><i class="fa fa-check"></i><b>7.1</b> Introduction</a></li>
 <li class="chapter" data-level="7.2" data-path="cicd.html"><a href="cicd.html#advanced-4"><i class="fa fa-check"></i><b>7.2</b> Advanced</a></li>
+=======
+<li class="chapter" data-level="4.1" data-path="containerization.html"><a href="containerization.html#r"><i class="fa fa-check"></i><b>4.1</b> R</a></li>
+<li class="chapter" data-level="4.2" data-path="containerization.html"><a href="containerization.html#python"><i class="fa fa-check"></i><b>4.2</b> Python</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="containerization.html"><a href="containerization.html#create-a-virtual-environment"><i class="fa fa-check"></i><b>4.2.1</b> Create a virtual environment</a></li>
+<li class="chapter" data-level="4.2.2" data-path="containerization.html"><a href="containerization.html#install-packages"><i class="fa fa-check"></i><b>4.2.2</b> install packages</a></li>
+<li class="chapter" data-level="4.2.3" data-path="containerization.html"><a href="containerization.html#exit-virtual-environment"><i class="fa fa-check"></i><b>4.2.3</b> exit virtual environment</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="containerization.html"><a href="containerization.html#delete-virtual-environment"><i class="fa fa-check"></i><b>4.3</b> Delete virtual environment</a></li>
+>>>>>>> ce0f603df2c531e36960f48498e00e5ff4283e9b
 </ul></li>
 <li class="chapter" data-level="8" data-path="tesing.html"><a href="tesing.html"><i class="fa fa-check"></i><b>8</b> Testing</a><ul>
 <li class="chapter" data-level="8.1" data-path="tesing.html"><a href="tesing.html#introduction-5"><i class="fa fa-check"></i><b>8.1</b> Introduction</a></li>
@@ -202,6 +212,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="python" class="section level3">
 <h3><span class="header-section-number">4.1.2</span> Python</h3>
 <p>Conda is useful package manager and can create virtual environments for pretty much anay programming language.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<div id="create-a-virtual-environment" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Create a virtual environment</h3>
+<ul>
+<li><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/">install conda</a></li>
+<li>check conda version using: <code>conda --version</code></li>
+</ul>
+<div id="with-default-python-version" class="section level4">
+<h4><span class="header-section-number">4.2.1.1</span> with default python version</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="containerization.html#cb3-1"></a><span class="ex">conda</span> create --name env1</span>
+<span id="cb3-2"><a href="containerization.html#cb3-2"></a><span class="ex">conda</span> activate env1</span>
+<span id="cb3-3"><a href="containerization.html#cb3-3"></a><span class="ex">python</span> --version</span></code></pre></div>
+</div>
+<div id="a-specifc-python-version" class="section level4">
+<h4><span class="header-section-number">4.2.1.2</span> a specifc python version</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="containerization.html#cb4-1"></a><span class="ex">conda</span> create --name env2 python=3.7</span>
+<span id="cb4-2"><a href="containerization.html#cb4-2"></a><span class="ex">conda</span> activate env2</span>
+<span id="cb4-3"><a href="containerization.html#cb4-3"></a><span class="ex">python</span> --version</span></code></pre></div>
+</div>
+</div>
+<div id="install-packages" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> install packages</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="containerization.html#cb5-1"></a><span class="ex">conda</span> install numpy</span></code></pre></div>
+</div>
+<div id="exit-virtual-environment" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> exit virtual environment</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="containerization.html#cb6-1"></a><span class="ex">conda</span> deactivate</span></code></pre></div>
+</div>
+</div>
+<div id="delete-virtual-environment" class="section level2">
+<h2><span class="header-section-number">4.3</span> Delete virtual environment</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="containerization.html#cb7-1"></a><span class="ex">conda</span> env remove -n env1</span>
+<span id="cb7-2"><a href="containerization.html#cb7-2"></a><span class="ex">conda</span> env remove -n env2</span></code></pre></div>
 <p>Similar to how shipping containers carry material goods in an enclosed space, software containers consist of application related goods (<em>e.g.</em> files and dependencies) in an enclosed environment. Containerization ensure reproducibility by bundling the necessary resources required to run a given set of analyses, web application, pipelines <em>etc.</em> irrespective of the operation system (OS). Thus, containers can be run on any OS (<em>e.g.</em> Mac, Windows, Linux)<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
 <p>Glossary:</p>
 </div>
