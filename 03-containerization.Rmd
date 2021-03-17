@@ -1,12 +1,14 @@
 # Containerization
 
+## Introduction
+
 A common problem observed during data analysis includes packages/libraries that are not compatible with specific R/Python software. Other times different project use specific versions of packages and the underlying R/Python versions. This leads to "dependency hell" which can be easily solved using virtual environments. A virtual environment is common to isolate the dependency requirements for specific projects which may rely on a specific R/Python version as well as specific versions of the software libraries.
 
-## R
+### R
 
 renv, packrat
 
-## Python
+### Python
 
 Conda is useful package manager and can create virtual environments for pretty much anay programming language ^[https://docs.conda.io/en/latest/]. 
 
@@ -66,3 +68,4 @@ Docker references
 
 e.g. [dockerized pipeline](https://github.com/cmap/dockerized_mts)
 
+## Advanced
