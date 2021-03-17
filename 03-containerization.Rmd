@@ -42,6 +42,12 @@ conda install numpy
 conda deactivate
 ```
 
+## List all virtual environments
+
+```{bash eval=FALSE}
+conda env list
+```
+
 ## Delete virtual environment
 
 ```{bash eval=FALSE}
