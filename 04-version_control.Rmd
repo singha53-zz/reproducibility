@@ -2,6 +2,19 @@
 
 ## Introduction
 
+### Git installation
+
+```{bash eval=FALSE}
+git --version
+```
+
+## Helpful git commands
+
+### fetch all remote branches
+
+```{bash eval=FALSE}
+git fetch --all
+```
 
 ## Advanced
 
